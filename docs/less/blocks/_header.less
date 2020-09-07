@@ -1,0 +1,282 @@
+.header {
+  padding-top: 70px;
+  padding-bottom: 340px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  background-image: url(../img/header/header-bg.jpg);
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  position: relative;
+  z-index: 1;
+}
+
+.header-top {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 147px;
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: 900;
+  transition: 0.5s;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.header-menu {
+}
+
+.header-menu__item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+
+  & + .header-menu__item {
+    margin-left: 75px;
+  }
+
+  &:focus {
+    border: 3px dotted rgb(234, 115, 109);
+  }
+}
+
+.header-social {
+}
+
+.header-social__item {
+  & + .header-social__item {
+    margin-left: 15px;
+  }
+}
+
+.header-social__item .fa {
+  color: #000;
+  &.fa-linkedin:hover,
+  &.fa-linkedin:active {
+    color: rgb(0, 119, 181);
+  }
+  &.fa-github:hover,
+  &.fa-github:active {
+    color: rgb(108, 198, 68);
+  }
+  &.fa-vk:hover,
+  &.fa-vk:active {
+    color: rgb(69, 102, 142);
+  }
+}
+
+.header-title__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  position: relative;
+  z-index: 10;
+}
+
+.header-title__content {
+  padding-bottom: 30px;
+  max-width: 555px;
+  width: 51%;
+}
+
+.header-title__content-heading {
+  margin-bottom: 14px;
+}
+
+.header-title__content-text {
+  margin-bottom: 34px;
+}
+
+.header-title__content-buttons {
+  display: flex;
+}
+
+.header-title__content-button {
+  & + .header-title__content-button {
+    margin-left: 20px;
+  }
+}
+
+.header-title__img {
+  width: 40%;
+  max-width: 456px;
+}
+
+.header-title__img::after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -103px;
+  right: -141px;
+  width: 474px;
+  height: 410px;
+  background-image: linear-gradient(
+    90deg,
+    rgb(244, 248, 249) 0%,
+    rgba(244, 248, 249, 0) 100%
+  );
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.header-banner {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -157px;
+  margin-bottom: -19px;
+  position: relative;
+  z-index: 5;
+}
+
+.header-skills {
+  padding-top: 100px;
+  margin-top: -220px;
+}
+
+.header-skills__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 100px;
+  margin-bottom: -100px;
+}
+
+.header-skills__content {
+  width: 57%;
+  max-width: 645px;
+}
+
+.header-skills__content-title {
+  margin-bottom: 23px;
+}
+
+.header-skills__content-list {
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+.header-skills__content-list-item {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.63;
+}
+
+.header-skills__content-button {
+}
+
+.header-skills__contact {
+  width: 32%;
+  max-width: 360px;
+  padding-right: 44px;
+}
+
+.header-skills__title {
+  margin-bottom: 12px;
+}
+
+.header-skills__social {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.header-skills__social-linc {
+  & + .header-skills__social-linc {
+    margin-left: 30px;
+  }
+
+  transition: 0.5s;
+}
+
+.header-skills__social-linc.github {
+  font-size: 58px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.header-skills__social-linc.telegram {
+  font-size: 51px;
+
+  .fa-telegram {
+    color: rgb(30, 171, 206);
+    &:hover {
+      color: rgba(30, 171, 206, 0.8);
+    }
+  }
+}
+
+.header-skills__social-linc.vk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(77, 118, 161);
+  &:hover {
+    background-color: rgba(77, 118, 161, 0.8);
+  }
+
+  .fa-vk {
+    color: #fff;
+    font-size: 26px;
+  }
+}
+
+.header-skills__social-linc.facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(59, 89, 152);
+  &:hover {
+    background-color: rgba(59, 88, 152, 0.8);
+  }
+
+  .fa-facebook {
+    color: #fff;
+    font-size: 26px;
+  }
+}
+
+.header-skills__mail-item.bottom-line {
+  &::after {
+    bottom: 3px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: #000;
+  }
+
+  &:hover {
+    color: hsl(200, 97%, 45%);
+  }
+
+  &:active {
+    color: #ea655f;
+  }
+}
+
+.header-skills__mail-item.bottom-line:hover::after {
+  background-color: hsl(200, 97%, 45%);
+}
+
+.header-skills__mail-item.bottom-line:active::after {
+  background-color: #ea655f;
+}
