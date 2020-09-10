@@ -27,7 +27,6 @@ body {
   width: 100%;
   color: #000;
   font-family: var(--fr);
-  font-weight: 800;
 }
 
 a,
@@ -99,6 +98,22 @@ button {
   background-color: transparent;
 }
 
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 11;
+  transition: .5s;
+}
+
+#overlay.active {
+  display: block;
+}
+
 .container {
   width: 100%;
   max-width: 320px;
@@ -128,12 +143,15 @@ button {
 .bottom-line {
   position: relative;
   width: fit-content;
+
+  z-index: 2;
+
   &::after {
     content: "";
     position: absolute;
     bottom: 8px;
-    left: -5px;
-    right: -15px;
+    left: -4px;
+    right: -4px;
     height: 12px;
     background-color: var(--line);
     z-index: -1;
@@ -173,7 +191,7 @@ button {
 
 .title-1 {
   font-size: 90px;
-  // font-weight: 800;
+  font-weight: 800;
   line-height: 1.2;
   span {
     display: block;
@@ -187,12 +205,12 @@ button {
 
 .title-2 {
   font-size: 40px;
-  // font-weight: 800;
+  font-weight: 800;
 }
 
 .title-3 {
   font-size: 64px;
-  // font-weight: 800;
+  font-weight: 800;
   line-height: 1.2;
 
   .bottom-line::after {
@@ -209,7 +227,7 @@ button {
 
 .title-5 {
   font-size: 26px;
-  // font-weight: 800;
+  font-weight: 800;
   line-height: 1.2;
 
   .bottom-line::after {
@@ -277,5 +295,14 @@ p {
     left: -30px;
     height: 2px;
     background-color: #444444;
+  }
+}
+
+.flex-wrapper {
+  display: block;
+
+  @media(min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
   }
 }
