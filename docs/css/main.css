@@ -82,6 +82,12 @@ a::-moz-selection {
 a::selection {
   background: var(--select);
 }
+button::-moz-selection {
+  background: var(--select);
+}
+button::selection {
+  background: var(--select);
+}
 img {
   max-width: 100%;
   height: auto;
@@ -1073,12 +1079,13 @@ p {
   padding-right: 12px;
   outline: none;
 }
-.form-item textarea.form-field {
+textarea.form-field {
   height: 100px;
   resize: none;
 }
-.form-item .fake-placeholder {
+.fake-placeholder {
   position: absolute;
+  pointer-events: none;
   left: 12px;
   top: 10px;
   font-size: 40px;
@@ -1087,7 +1094,7 @@ p {
   -moz-transition: .5s;
   transition: .5s;
 }
-.form-item .fake-placeholder.active {
+.fake-placeholder.active {
   color: orange;
   font-size: 30px;
   top: -10px;
