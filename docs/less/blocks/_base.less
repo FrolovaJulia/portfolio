@@ -72,6 +72,11 @@ h2::selection {
   background: var(--select);
 }
 
+h6::selection {
+  background: var(--select);
+}
+
+
 li::selection {
   background: var(--select);
 }
@@ -205,6 +210,20 @@ button {
     left: 1px;
     right: 1px;
   }
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+  
+
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+      
+  }
 }
 
 .title-2 {
@@ -285,8 +304,22 @@ button {
 
 p {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
+
+  // Медиа запрос для планшетов и выше
+  @media (min-width: 768px) {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.7;
+  
+
+  }
+
+  // Медиа запрос для десктопов
+  @media (min-width: 1200px) {
+      
+  }
 }
 
 .side-line {
@@ -310,3 +343,73 @@ p {
     justify-content: space-between;
   }
 }
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+
+.social-icons__linc {
+  & + .social-icons__linc {
+    margin-left: 30px;
+  }
+
+  transition: 0.5s;
+}
+
+.social-icons__linc.github {
+  font-size: 58px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.social-icons__linc.telegram {
+  font-size: 51px;
+
+  .fa-telegram {
+    color: rgb(30, 171, 206);
+    &:hover {
+      color: rgba(30, 171, 206, 0.8);
+    }
+  }
+}
+
+.social-icons__linc.vk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(77, 118, 161);
+  &:hover {
+    background-color: rgba(77, 118, 161, 0.8);
+  }
+
+  .fa-vk {
+    color: #fff;
+    font-size: 26px;
+  }
+}
+
+.social-icons__linc.facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgb(59, 89, 152);
+  &:hover {
+    background-color: rgba(59, 88, 152, 0.8);
+  }
+
+  .fa-facebook {
+    color: #fff;
+    font-size: 26px;
+  }
+}
+
