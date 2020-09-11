@@ -164,6 +164,7 @@ button {
     height: 12px;
     background-color: var(--line);
     z-index: -1;
+    transition: .5s;
 
     &:hover {
       background-color: rgb(255, 210, 0);
@@ -253,7 +254,7 @@ button {
   font-weight: 800;
   line-height: 1.2;
 
-  .bottom-line::after {
+  &.bottom-line::after {
     bottom: 1px;
     height: 7px;
     left: 0;
