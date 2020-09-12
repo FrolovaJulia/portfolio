@@ -118,10 +118,10 @@ button {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 11;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 #overlay.active {
   display: block;
@@ -171,10 +171,10 @@ button {
   height: 12px;
   background-color: var(--line);
   z-index: -1;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .bottom-line::after:hover {
   background-color: #ffd200;
@@ -1254,6 +1254,13 @@ p {
     color: #039be5;
     font-size: 20px;
     font-weight: 500;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .contacts-list__item a:hover {
+    color: #ed574f;
   }
 }
 .contacts__form {
@@ -1278,6 +1285,7 @@ p {
   margin-bottom: 45px;
 }
 .form-item .form-field {
+  cursor: pointer;
   width: 100%;
   height: 52px;
   border: 0px;
@@ -1285,6 +1293,10 @@ p {
   font-size: 20px;
   font-weight: 700;
   outline: none;
+}
+.form-item .form-field:focus,
+.form-item .form-field:active {
+  border-bottom: 1px solid #ea736d;
 }
 .form-item textarea.form-field {
   height: 127px;
@@ -1298,10 +1310,10 @@ p {
   top: 10px;
   font-size: 20px;
   font-weight: 700;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .form-item:last-child {
   margin-bottom: 0;
@@ -1340,10 +1352,10 @@ p {
 }
 .footer__content p a {
   color: #b0b0b0;
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .footer__content p a:hover {
   color: rgba(176, 176, 176, 0.486);
@@ -1357,5 +1369,8 @@ p {
 }
 .footer__content .bottom-line::after:hover {
   color: rgba(176, 176, 176, 0.486);
+}
+.footer__content-link:hover.bottom-line:after {
+  background-color: #ea736d;
 }
 /*# sourceMappingURL=main.css.map */
