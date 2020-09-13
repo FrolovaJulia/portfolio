@@ -199,33 +199,53 @@ button {
 }
 
 .title-1 {
-  font-size: 90px;
+  font-size: 42px;
   font-weight: 800;
   line-height: 1.2;
   span {
     display: block;
   }
   .bottom-line::after {
-    bottom: 13px;
-    left: 1px;
-    right: 1px;
+    bottom: 2px;
+    left: -1px;
+    right: -1px;
   }
 
   // Медиа запрос для планшетов и выше
   @media (min-width: 768px) {
     font-size: 52px;
-    font-weight: 800;
     line-height: 1.2;
+
+    .bottom-line::after {
+      bottom: 6px;
+      left: -1px;
+      right: -1px;
+    }
   }
 
   // Медиа запрос для десктопов
   @media (min-width: 1200px) {
+    font-size: 90px;
+
+    .bottom-line::after {
+      bottom: 13px;
+      left: 1px;
+      right: 1px;
+    }
   }
 }
 
 .title-2 {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 800;
+
+  @media (min-width: 768px) {
+    font-size: 32px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 40px;
+  }
 }
 
 .title-3 {
@@ -300,32 +320,33 @@ button {
 }
 
 p {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.7;
 
   // Медиа запрос для планшетов и выше
   @media (min-width: 768px) {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.7;
   }
 
   // Медиа запрос для десктопов
   @media (min-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.5;
   }
 }
 
 .side-line {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    bottom: 41%;
-    left: -30px;
-    height: 2px;
-    background-color: #444444;
+  @media (min-width: 1200px) {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 23px;
+      bottom: 41%;
+      left: -30px;
+      height: 2px;
+      background-color: #444444;
+    }
   }
 }
 
@@ -341,7 +362,6 @@ p {
 .social-icons {
   display: flex;
   align-items: center;
-  margin-bottom: 9px;
 }
 
 .social-icons__linc {
