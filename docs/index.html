@@ -16,25 +16,34 @@
         <a class="logo bottom-line" href="#">ЮК</a>
 
         <!-- Меню -->
-        <nav class="header-menu">
-          <a class="header-menu__item animate-border" href="#">Главная</a>
+        <nav class="header-menu ">
+          <a class="logo bottom-line" href="#">ЮК</a>
+          <a class="header-menu__item main animate-border" href="#">Главная</a>
+          <a class="header-menu__item services animate-border" href="#">Услуги</a>
           <a class="header-menu__item animate-border" href="#">Работы</a>
           <a class="header-menu__item animate-border" href="#">Контакты</a>
 
           <div class="mobile-contacts">
-            <!-- Соц иконки в моб меню -->
-            <nav class="header-social">
-              <a class="header-social__item" href="#"
-                ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i
+          <!-- Соц иконки в моб меню -->
+
+            <div class="social-icons">
+              <a class="social-icons__linc github" href="#"
+                ><i class="fa fa-github" aria-hidden="true"></i
               ></a>
-              <a class="header-social__item" href="#"
-                ><i class="fa fa-vk fa-2x" aria-hidden="true"></i
+
+              <a class="social-icons__linc telegram" href="#"
+                ><i class="fa fa-telegram" aria-hidden="true"></i
               ></a>
-              <a class="header-social__item" href="#"
-                ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+
+              <a class="social-icons__linc vk" href="#"
+                ><i class="fa fa-vk" aria-hidden="true"></i
               ></a>
-            </nav>
-            <a href="#">info@mail.ru</a>
+
+              <a class="social-icons__linc facebook" href="#"
+                ><i class="fa fa-facebook" aria-hidden="true"></i
+              ></a>
+            </div>
+            <a class="mobile-contacts__mail" href="#">info@webdeveloper.ru</a>
           </div>
         </nav>
 
@@ -158,7 +167,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="">
       <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="portfolio-header">
@@ -193,7 +202,7 @@
                 <a href="#" class="title-4 portfolio-card__descrip-title"
                   >Верстка &quot;Форест тревел&quot;</a
                 >
-                <p class="portfolio-card__descrip-details">
+                <p>
                   Верстка многостраничного сайта.
                 </p>
               </div>
@@ -206,9 +215,9 @@
               </a>
               <div class="portfolio-card__descrip">
                 <a href="#" class="title-4 portfolio-card__descrip-title"
-                  >Сайт для коворкинга &quot;Мечта&quot;</a
+                  >Сайт для коворкинга</a
                 >
-                <p class="portfolio-card__descrip-details">Верстка лендинга.</p>
+                <p>Верстка лендинга.</p>
               </div>
             </div>
 
@@ -220,12 +229,10 @@
               <div class="portfolio-card__descrip">
                 <a
                   href="#"
-                  class="title-4 portfolio-card__descrip-title portfolio-card__descrip-title--small"
+                  class="title-4 portfolio-card__descrip-title"
                   >Верстка &quot;Мир Авто&quot;</a
                 >
-                <p
-                  class="portfolio-card__descrip-details portfolio-card__descrip-details--small"
-                >
+                <p>
                   Верстка многостраничного сайта.
                 </p>
               </div>
@@ -239,12 +246,10 @@
               <div class="portfolio-card__descrip">
                 <a
                   href="#"
-                  class="title-4 portfolio-card__descrip-title portfolio-card__descrip-title--small"
+                  class="title-4 portfolio-card__descrip-title"
                   >Верстка &quot;Мир Авто&quot;</a
                 >
-                <p
-                  class="portfolio-card__descrip-details portfolio-card__descrip-details--small"
-                >
+                <p>
                   Верстка многостраничного сайта.
                 </p>
               </div>
@@ -258,17 +263,17 @@
               <div class="portfolio-card__descrip">
                 <a
                   href="#"
-                  class="title-4 portfolio-card__descrip-title portfolio-card__descrip-title--small"
+                  class="title-4 portfolio-card__descrip-title"
                   >Верстка &quot;Мир Авто&quot;</a
                 >
-                <p
-                  class="portfolio-card__descrip-details portfolio-card__descrip-details--small"
-                >
+                <p>
                   Верстка многостраничного сайта.
                 </p>
               </div>
             </div>
           </div>
+
+            <a href="#" class="portfolio-link bottom-line">Смотреть все работы</a>
         </div>
       </section>
 
@@ -474,7 +479,7 @@
                 </div>
 
                 <div class="contacts__form-button">
-                  <button class="btn" href="#skills">Отправить</button>
+                  <button class="btn">Отправить</button>
                 </div>
               </form>
             </div>

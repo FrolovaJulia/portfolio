@@ -151,7 +151,6 @@ button {
 .bottom-line {
   position: relative;
   width: fit-content;
-
   z-index: 2;
 
   &::after {
@@ -193,9 +192,29 @@ button {
   }
 }
 
+.animate-border {
+  &::before,
+  &::after {
+    width: 50%;
+
+    @media (min-width: 768px) {
+    }
+
+    @media (min-width: 1200px) {
+      width: 0%;
+    }
+  }
+}
+
 .animate-border:hover::before,
 .animate-border:hover:after {
-  width: 55%;
+  @media (min-width: 768px) {
+  }
+
+  @media (min-width: 1200px) {
+    display: block;
+    width: 55%;
+  }
 }
 
 .title-1 {
@@ -215,7 +234,6 @@ button {
   @media (min-width: 768px) {
     font-size: 52px;
     line-height: 1.2;
-
     .bottom-line::after {
       bottom: 6px;
       left: -1px;
@@ -249,32 +267,72 @@ button {
 }
 
 .title-3 {
-  font-size: 64px;
+  font-size: 42px;
   font-weight: 800;
   line-height: 1.2;
 
   .bottom-line::after {
-    bottom: 13px;
-    left: -2px;
-    right: -2px;
+    bottom: 8px;
+    left: 0;
+    right: -4px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 52px;
+    line-height: 1.2;
+    .bottom-line::after {
+      bottom: 12px;
+      left: -2px;
+      right: -2px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 64px;
+    line-height: 1.2;
+
+    .bottom-line::after {
+      bottom: 13px;
+      left: -2px;
+      right: -2px;
+    }
   }
 }
 
 .title-4 {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 700;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 
 .title-5 {
-  font-size: 26px;
+  font-size: 20px;
   font-weight: 800;
   line-height: 1.2;
-
   &.bottom-line::after {
-    bottom: 1px;
-    height: 7px;
-    left: 0;
-    right: 0;
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 26px;
+    &.bottom-line::after {
+      display: block;
+      bottom: 1px;
+      height: 7px;
+      left: 0;
+      right: 0;
+    }
   }
 }
 
@@ -365,6 +423,7 @@ p {
 }
 
 .social-icons__linc {
+  
   & + .social-icons__linc {
     margin-left: 30px;
   }
