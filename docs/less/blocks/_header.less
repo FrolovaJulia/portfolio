@@ -4,13 +4,10 @@
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
-  max-width: 320px;
 
   // Медиа запрос для планшетов и выше
   @media (min-width: 768px) {
-    max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
+    padding-bottom: 184px;
   }
 
   // Медиа запрос для десктопов
@@ -18,9 +15,6 @@
     padding-top: 61px;
     padding-bottom: 340px;
     max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
     background-image: url(../img/header/header-bg.jpg);
     background-size: contain;
     background-position: 0 0;
@@ -29,10 +23,10 @@
 }
 
 .header-top {
-  max-width: 290px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  padding-right: 20px;
   margin-bottom: 26px;
   display: flex;
   align-items: center;
@@ -40,21 +34,16 @@
 
   // Медиа запрос для планшетов и выше
   @media (min-width: 768px) {
-    max-width: 708px;
-    padding-right: 18px;
     margin-bottom: 76px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   // Медиа запрос для десктопов
   @media (min-width: 1200px) {
-    max-width: 1400px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-width: 1430px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 147px;
   }
 }
@@ -200,11 +189,12 @@
   cursor: pointer;
   position: relative;
   z-index: 6;
-  margin-right: -5px;
-  margin-top: -10px;
+  margin-right: 7px;
+  margin-top: 6px;
 
   @media (min-width: 768px) {
-    margin-right: -20px;
+    margin-right: 20px;
+    margin-top: 4px;
   }
 
   @media (min-width: 1200px) {
@@ -323,7 +313,7 @@
 .header-title__content {
   // Медиа запрос для планшетов и выше
   @media (min-width: 768px) {
-    max-width: 339px;
+    min-width: 339px;
     width: 48%;
   }
 
@@ -382,13 +372,12 @@
 
 .header-title__img {
   width: 100%;
-  max-width: 290px;
   margin-bottom: 81px;
 
   // Медиа запрос для планшетов и выше
   @media (min-width: 768px) {
-    width: 41%;
-    max-width: 290px;
+    width: 44%;
+    min-width: 290px;
     margin-bottom: 0;
     padding-right: 25px;
   }
@@ -401,8 +390,16 @@
   }
 }
 
+.header-title__img img {
+  @media (min-width: 576px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .header-title__img::after {
   display: none;
+
   // Медиа запрос для планшетов и выше
   @media (min-width: 768px) {
     content: "";
