@@ -1,17 +1,41 @@
 $(document).ready(function () {
-
     const menuToggle = document.querySelector(".toggle-menu");
     const mobMenu = document.querySelector(".header-menu");
     const overlayEl = document.querySelector("#overlay");
+    const bodyEl = document.body;
 
     //клик по иконке Гамбургер
     menuToggle.addEventListener("click", function () {
         this.classList.toggle("active");
         mobMenu.classList.toggle("active");
         overlayEl.classList.toggle("active");
+        bodyEl.classList.toggle("noscroll");
   });
 
-  
+  // клик по мобильному меню
+  mobMenu.addEventListener("click", function(){
+    this.classList.remove("active");
+    menuToggle.classList.remove("active");
+    overlayEl.classList.remove("active");
+    bodyEl.classList.remove("noscroll");
+  });
+
+  // закрытие моб меню при клике по оверлею
+  overlayEl.addEventListener("click", function(){
+    this.classList.remove("active");
+    menuToggle.classList.remove("active");
+    mobMenu.classList.remove("active");
+    bodyEl.classList.remove("noscroll");
+  });
+
+  // закрытие моб меню при ресайзе экрана
+  window.addEventListener("resize", function(){
+    mobMenu.classList.remove("active");
+    menuToggle.classList.remove("active");
+    overlayEl.classList.remove("active");
+    bodyEl.classList.remove("noscroll");
+  });
+
 
   let containerEl = document.querySelector("#portfolio-projects");
   let mixer = mixitup(containerEl, {
@@ -20,7 +44,6 @@ $(document).ready(function () {
   block: ""
   }
 });
-
 
   //FORM PLACEHOLDER
   const formInputs = document.querySelectorAll(".form-field");
@@ -38,9 +61,7 @@ $(document).ready(function () {
       thisPlaceholder.classList.remove("active");
     }
   });
-
   }
-
 })
 
 
