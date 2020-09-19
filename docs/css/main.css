@@ -280,8 +280,8 @@ button {
 }
 .title-3 .bottom-line::after {
   bottom: 8px;
-  left: 0;
-  right: -4px;
+  left: -1px;
+  right: -1px;
 }
 @media (min-width: 768px) {
   .title-3 {
@@ -1806,7 +1806,7 @@ p {
 @media (min-width: 1200px) {
   .contacts {
     padding-top: 135px;
-    padding-bottom: 148px;
+    padding-bottom: 150px;
     background-image: url(../img/contacts/contacts-lines.jpg);
     -moz-background-size: contain;
          background-size: contain;
