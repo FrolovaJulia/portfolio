@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="fonts/font-awecon/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fonts/mplus1p/mplus1p.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="overlay"></div>
+
+    <ul id="page-nav">
+      <li class="active">
+        <a href="#header"></a>
+      </li>
+      <li>
+        <a href="#portfolio"></a>
+      </li>
+      <li>
+        <a href="#work"></a>
+      </li>
+      <li>
+        <a href="#contacts"></a>
+      </li>
+    </ul>
+
+    <header class="header" id="header">
+      <div class="header-top">
+        <a class="logo bottom-line" href="#">ЮФ</a>
+
+        <!-- Меню -->
+        <nav class="header-menu">
+          <a class="logo bottom-line" href="#">ЮФ</a>
+          <a
+            class="header-menu__item main animate-border"
+            href="index.html"
+            data-aos="zoom-in"
+            >Главная</a
+          >
+          <a
+            class="header-menu__item animate-border"
+            href="works.html"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            >Работы</a
+          >
+          <a
+            class="header-menu__item animate-border"
+            href="#contacts"
+            data-aos="zoom-in"
+            data-aos-delay="900"
+            >Контакты</a
+          >
+
+          <!-- Соц иконки в моб меню -->
+          <div class="mobile-contacts">
+            <div class="social-icons">
+              <a target="_blank" class="social-icons__linc github" href="https://github.com/FrolovaJulia"
+                ><i class="fa fa-github" aria-hidden="true"></i
+              ></a>
+
+              <a target="_blank" class="social-icons__linc telegram" href="https://t.me/JOFrolova"
+                ><i class="fa fa-telegram" aria-hidden="true"></i
+              ></a>
+
+              <a target="_blank" class="social-icons__linc vk" href="https://vk.com/id21699622"
+                ><i class="fa fa-vk" aria-hidden="true"></i
+              ></a>
+
+            </div>
+            <a class="mobile-contacts__mail" href="#">julia.24@mail.ru</a>
+          </div>
+        </nav>
+
+        <!-- Соц иконки на десктопах -->
+        <nav class="header-social">
+          <a target="_blank" class="header-social__item" href="https://t.me/JOFrolova"
+            ><i class="fa fa-telegram fa-2x" aria-hidden="true"></i
+          ></a>
+          <a target="_blank" class="header-social__item" href="https://github.com/FrolovaJulia"
+            ><i class="fa fa-github fa-2x" aria-hidden="true"></i
+          ></a>
+          <a target="_blank" class="header-social__item" href="https://vk.com/id21699622"
+            ><i class="fa fa-vk fa-2x" aria-hidden="true"></i
+          ></a>
+        </nav>
+
+        <!-- Иконка гамбургер -->
+        <div class="toggle-menu"><span></span></div>
+      </div>
+
+      <!-- Блок с заголовком -->
+      <div class="header-title">
+        <div class="container">
+          <div class="header-title__wrapper flex-wrapper">
+            <div class="header-title__img">
+              <img src="img/header/1.jpg" alt="" />
+            </div>
+
+            <div class="header-title__content">
+              <div class="header-title__content-heading">
+                <h1 class="title-1">
+                  <span class="bottom-line">Юлия</span>
+                  <span class="bottom-line">Фролова</span>
+                </h1>
+              </div>
+              <div class="header-title__content-text">
+                <p>
+                  Верстальщик сайтов, веб-разработчик. Оперативная верстка.
+                  Работаю с соблюдением сроков и выполнением&nbsp;TЗ.
+                </p>
+              </div>
+              <div class="header-title__content-buttons">
+                <div class="header-title__content-button">
+                  <a class="btn" href="#skills">Познакомиться</a>
+                </div>
+                <div class="header-title__content-button">
+                  <a class="btn btn-border" href="#contacts">Контакты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Блок - большая картинка -->
+      <div class="header-banner">
+        <img src="img/header/header-bg.png" alt="img" />
+      </div>
+
+      <!-- Блок скилы -->
+      <div class="header-skills" id="skills">
+        <div class="container">
+          <div class="header-skills__wrapper flex-wrapper">
+            <div class="header-skills__content">
+              <div class="header-skills__content-title">
+                <h2 class="title-2">Что я умею:</h2>
+              </div>
+              <ul class="header-skills__content-list">
+                <li class="header-skills__content-list-item side-line">
+                  Знание HTML5‚ CSS3, JavaScript.
+                </li>
+                <li class="header-skills__content-list-item side-line">
+                  Pixel perfect, полное соответствие макету.
+                </li>
+                <li class="header-skills__content-list-item side-line">
+                  Верстаю с сеткой или без.
+                </li>
+                <li class="header-skills__content-list-item side-line">
+                  Адаптивная верстка под мобильные устройства.
+                </li>
+                <li class="header-skills__content-list-item side-line">
+                  С Bootstrap и без него.
+                </li>
+              </ul>
+              <div class="header-skills__content-button">
+                <a class="btn" href="#portfolio">Смотреть работы</a>
+              </div>
+            </div>
+
+            <div class="header-skills__contact">
+              <div class="header-skills__title">
+                <h2 class="title-2">На связи:</h2>
+              </div>
+              <div class="social-icons">
+                <a target="_blank" class="social-icons__linc github" href="https://github.com/FrolovaJulia"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+
+                <a target="_blank" class="social-icons__linc telegram" href="https://t.me/JOFrolova"
+                  ><i class="fa fa-telegram" aria-hidden="true"></i
+                ></a>
+
+                <a target="_blank" class="social-icons__linc vk" href="https://vk.com/id21699622"
+                  ><i class="fa fa-vk" aria-hidden="true"></i
+                ></a>
+
+              </div>
+              <div class="header-skills__mail">
+                <a
+                  class="header-skills__mail-item bottom-line"
+                  href="mailto:julia.24@mail.ru"
+                  >julia.24@mail.ru</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="">
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <div class="portfolio-header">
+            <h2 class="title-3"><span class="bottom-line">Портфолио</span></h2>
+          </div>
+
+          <div class="portfolio-content" id="portfolio-projects">
+            <div class="portfolio-card portfolio-card--big mix boots">
+              <a target="_blank" href="https://frolovajulia.github.io/forest-travel/" class="portfolio-card__poster">
+                <img src="./img/portfolio/forest-travel.jpg" alt="portfolio" />
+                <button class="more-btn">Смотреть проект</button>
+              </a>
+              <div class="portfolio-card__descrip">
+                <a target="_blank" href="https://frolovajulia.github.io/forest-travel/" class="title-4 portfolio-card__descrip-title"
+                  >Макет &quot;Форест тревел&quot;</a
+                >
+                <p>Верстка многостраничного сайта с PSD макета. Верстка формы отправки данных, добавление карты, использование Pixel perfect.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card portfolio-card--big mix wp">
+              <a target="_blank" href="https://frolovajulia.github.io/motobike-card/" class="portfolio-card__poster">
+                <img src="./img/portfolio/motobike-card.jpg" alt="portfolio" />
+                <button class="more-btn">Смотреть проект</button>
+              </a>
+              <div class="portfolio-card__descrip">
+                <a target="_blank" href="https://frolovajulia.github.io/motobike-card/" class="title-4 portfolio-card__descrip-title"
+                  >Карточка товара</a
+                >
+                <p>Верстка карточки товара по макету Photoshop, использование Pixel perfect. Реализация выбора цвета мотоцикла при помощи JavaScript.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card portfolio-card--big mix wp">
+              <a target="_blank" href="https://frolovajulia.github.io/book-card/" class="portfolio-card__poster">
+                <img src="./img/portfolio/portfolio09.jpg" alt="portfolio" />
+                <button class="more-btn">Смотреть проект</button>
+              </a>
+              <div class="portfolio-card__descrip">
+                <a target="_blank" href="https://frolovajulia.github.io/book-card/" class="title-4 portfolio-card__descrip-title"
+                  >Карточка с книгой</a
+                >
+                <p>Верстка карточки с книгой по макету Photoshop, использование Pixel perfect.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card portfolio-card--big mix wp boots">
+              <a target="_blank" href="https://frolovajulia.github.io/unit/" class="portfolio-card__poster">
+                <img src="./img/portfolio/unit.jpg" alt="portfolio" />
+                <button class="more-btn">Смотреть проект</button>
+              </a>
+              <div class="portfolio-card__descrip">
+                <a target="_blank" href="https://frolovajulia.github.io/unit/" class="title-4 portfolio-card__descrip-title"
+                  >Макет &quot;Юнит&quot;</a
+                >
+                <p>Верстка макета с применением flex-box, CSS препроцессора LESS, Pixel perfect, Mobile First, слайдер на библиотеке jQuery.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card portfolio-card--big mix wp boots">
+              <a target="_blank" href="https://frolovajulia.github.io/boutique/" class="portfolio-card__poster">
+                <img src="./img/portfolio/boutique.jpg" alt="portfolio" />
+                <button class="more-btn">Смотреть проект</button>
+              </a>
+              <div class="portfolio-card__descrip">
+                <a target="_blank" href="https://frolovajulia.github.io/boutique/" class="title-4 portfolio-card__descrip-title"
+                  >Макет &quot;Boutique&quot;</a
+                >
+                <p>Верстка главной страницы интернет магазина по макету Figma с применением сборки Gulp (pug, препроцессор SCSS), flex-box, Mobile First, Pixel perfect. Реализация мобильного меню и иконки "гамбургер" на JS.</p>
+              </div>
+            </div>
+
+            <div class="portfolio-card portfolio-card--big mix wp boots">
+              <a target="_blank" href="https://frolovajulia.github.io/catalog/" class="portfolio-card__poster">
+                <img src="./img/portfolio/catalog.jpg" alt="portfolio" />
+                <button class="more-btn">Смотреть проект</button>
+              </a>
+              <div class="portfolio-card__descrip">
+                <a target="_blank" href="https://frolovajulia.github.io/catalog/" class="title-4 portfolio-card__descrip-title"
+                  >Каталог</a
+                >
+                <p>Верстка блока фильтров, мобильная адаптация, JavaScript.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#" class="portfolio-link bottom-line">Смотреть все работы</a>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="container">
+          <div class="work-header">
+            <h2 class="title-3">
+              <span class="bottom-line">Как я работаю</span>
+            </h2>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img
+                  class="timeline-icon__img"
+                  src="./img/work/layers.png"
+                  alt="icon"
+                />
+              </div>
+              <a href="#" class="timeline-content">
+                <div class="timeline-content__title">
+                  <h3 class="title-5 bottom-line">Оцениваю макет</h3>
+                </div>
+
+                <div class="timeline-content__text">
+                  <p>
+                    Оцениваю объем работы, сложность, нюансы. Задаю вопросы.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img
+                  class="timeline-icon__img"
+                  src="./img/work/presentation-chart.png"
+                  alt="icon"
+                />
+              </div>
+              <a href="#" class="timeline-content">
+                <div class="timeline-content__title">
+                  <h3 class="title-5 bottom-line">ТЗ, смета и график работ</h3>
+                </div>
+                <div class="timeline-content__text">
+                  <p>
+                    Согласовываем техническое задание и график работ по проекту.
+                    Осмечиваю стоимость по этапам работы.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img
+                  class="timeline-icon__img"
+                  src="./img/work/24-hours.png"
+                  alt="icon"
+                />
+              </div>
+              <a href="#" class="timeline-content">
+                <div class="timeline-content__title">
+                  <h3 class="title-5 bottom-line">
+                    Вы держите руку на&nbsp;пульсе
+                  </h3>
+                </div>
+                <div class="timeline-content__text">
+                  <p>
+                    Выдаю клиенту доступ к GitHub репозиторию. Вы
+                    в любое время можете видеть актуальное состояние проекта и
+                    задач.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img
+                  class="timeline-icon__img"
+                  src="./img/work/code-alt.png"
+                  alt="icon"
+                />
+              </div>
+              <a href="#" class="timeline-content">
+                <div class="timeline-content__title">
+                  <h3 class="title-5 bottom-line">Выполняю каждый этап</h3>
+                </div>
+                <div class="timeline-content__text">
+                  <p>
+                    Поочередно выполняю каждый этап работы. Передаю результаты.
+                    Заказчик производит поэтапную оплату.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img
+                  class="timeline-icon__img"
+                  src="./img/work/diamond.png"
+                  alt="icon"
+                />
+              </div>
+              <a href="#" class="timeline-content">
+                <div class="timeline-content__title">
+                  <h3 class="title-5 bottom-line">Финальное ревью проекта</h3>
+                </div>
+                <div class="timeline-content__text">
+                  <p>
+                    Проект готов. Финальное ревью и полировка до идеального
+                    состояния. Передаю файлы проекта, заливаю сайт на хостинг
+                    заказчика.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <div class="contacts-header">
+            <h2 class="title-3"><span class="bottom-line">Контакты</span></h2>
+          </div>
+          <div class="contacts__wrapper flex-wrapper">
+            <div class="contacts-content">
+              <div class="contacts-text">
+                <p>
+                  Если вы ищите специалиста по верстке сайтов, front-end
+                  разработчика в команду или для работы над проектом —
+                  напишите&nbsp;мне.
+                </p>
+              </div>
+              <ul class="contacts-list">
+                <li class="contacts-list__item">
+                  <p>Email</p>
+                  <a href="mailto:julia.24@mail.ru">julia.24@mail.ru</a>
+                </li>
+                <li class="contacts-list__item">
+                  <p>Skype</p>
+                  <a href="Skype:jofrolova?add">Юлия Фролова</a>
+                </li>
+                <li class="contacts-list__item">
+                  <p>Телефон</p>
+                  <a href="tel:+79200454944">+7 (920) 045-49-44</a>
+                </li>
+                <li class="contacts-list__item">
+                  <p>Адрес</p>
+                  <p>Россия, Нижний Новгород</p>
+                </li>
+              </ul>
+
+              <div class="social-icons">
+                <a target="_blank" class="social-icons__linc github" href="https://github.com/FrolovaJulia"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+
+                <a target="_blank" class="social-icons__linc telegram" href="https://t.me/JOFrolova"
+                  ><i class="fa fa-telegram" aria-hidden="true"></i
+                ></a>
+
+                <a target="_blank" class="social-icons__linc vk" href="https://vk.com/id21699622"
+                  ><i class="fa fa-vk" aria-hidden="true"></i
+                ></a>
+
+              </div>
+            </div>
+            <div class="contacts__form">
+              <form action="" class="contacts-form" id="contacts-form">
+                <input type="hidden" name="project_name" value="portfolio.ru" />
+                <input
+                  type="hidden"
+                  name="admin_email"
+                  value="julia.24@mail.ru"
+                />
+                <input
+                  type="hidden"
+                  name="email_form"
+                  value="info@portfolio.ru"
+                />
+
+                <div class="form-item">
+                  <input class="form-field email" type="text" name="email" />
+                  <span class="fake-placeholder">Ваш Email</span>
+                </div>
+
+                <div class="form-item">
+                  <input class="form-field theme" type="text" name="theme" />
+                  <span class="fake-placeholder">Тема письма</span>
+                </div>
+
+                <div class="form-item">
+                  <textarea class="form-field" name="message"></textarea>
+                  <span class="fake-placeholder">Сообщение</span>
+                </div>
+
+                <div class="contacts__form-button">
+                  <button type="submit" class="btn">Отправить</button>
+                </div>
+              </form>
+              <div id="answer"></div>
+            </div>
+            <div class="contacts-bg">
+              <img src="img/contacts/contacts-bg.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__header">
+          <h6 class="footer__header-title">&#169; 2020 — Юлия Фролова</h6>
+        </div>
+        <div class="footer__content">
+          <p>
+            Веб-разработик из Нижнего Новгорода, занимаюсь версткой и созданием
+            сайтов.<br />Этот сайт сделан в рамках прохождения обучения по
+            верстке на курсах от
+            <a target="_blank" href="https://webcademy.ru/" class="footer__content-link bottom-line">
+              WebCademy.ru</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Плагины и бибоиотеки -->
+    <script src="libs/jquery/jquery-3.5.1.min.js"></script>
+    <!-- <script src="libs/mixitup3/mixitup.min.js"></script> -->
+    <script src="libs/jquery.validate/jquery.validate.js"></script>
+    <script src="libs/nav.js/nav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Пользовательские скрипты -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
